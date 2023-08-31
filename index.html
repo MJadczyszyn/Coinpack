@@ -15,15 +15,15 @@
     
 <div>
     <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#O nas">O nas</a></li>
+        <li><a href="#Technologia">Technologia</a></li>
+        <li><a href="#Realizacje">Realizacje</a></li>
+        <li><a href="#Kontakt">Kontakt</a></li>
     </ul>
 </div>
 </nav>
 <nav id="hamburger-nav">
-<div class="logo">Coinpack</div>
+<div class="logo"><img src="assets/logo.jpg" alt="Coinpack Logo"></div>
 <div class="hamburger"></div>
 <div class="hamburger-icon" onclick="toggleMenu()">
 <span></span>
@@ -31,12 +31,32 @@
 <span></span>
 </div>
 <div class="menu-links">
-    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    <li><a href="#O nas" onclick="toggleMenu()">O nas</a></li>
+    <li><a href="#Technologia" onclick="toggleMenu()">Technologia</a></li>
+    <li><a href="#Realizacje" onclick="toggleMenu()">Realizacje</a></li>
+    <li><a href="#Kontakt" onclick="toggleMenu()">Kontakt</a></li>
 </div>
 </nav>
+
+<section id="Hero">
+    <div class="section_pic-container">
+        <img src="assets/1.jpg" alt="monety">
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Monety tworzą twoją historię</p>
+        <h1 class="title">Opakowanie nadaje im znaczenie</h1>
+        <p c;ass="section__text__p2">Zapraszamy do współpracy</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Zobacz CV</button>
+            <button class="btn btn-color-1" onclick="location.href('./Kontakt')">Kontakt</button>
+        </div>
+        <div id="social-container">
+            <img src="assets/linkedin.png" alt="Linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/'">
+            <img src="assets/github.png" alt="GitHub profile" class="icon" onclick="location.href='https://www.github.com/'">
+        </div>
+        
+
+</section>
 
     <script src="script.js"></script>    
 </body>
