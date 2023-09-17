@@ -148,7 +148,6 @@ a:hover {
 }
 
 /* SECTIONS */
-
 section {
     padding: 4vh;
     height: 96hv;
@@ -162,7 +161,6 @@ section {
 }
 
 /* HERO */
-
 #Hero {
     display: flex;
     justify-content: center;
@@ -170,15 +168,14 @@ section {
     height: 80vh;
 }
 
-.section__pic-container {
+.section_pic-container {
     display: flex;
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center vertically */
+    gap: 5rem; /* Add 5rem gap between image and text */
 }
 
 .section__text {
-    align-self: center;
     text-align: center;
 }
 
@@ -190,7 +187,7 @@ section {
     text-align: center;
 }
 
-.section__text__p1 {
+.section__text__p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
 }
@@ -209,11 +206,110 @@ section {
 
 #Hero > div.section_pic-container > img {
     border-radius: 50%;
+    align-self: center;
+    display: block;
 }
 
 /* Icons */
-
 .icon {
     cursor: pointer;
     height: 2rem;
+}
+
+/* BUTTONS */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1, .btn-color-2 {
+    border: rgn(53,53,53) 0.1rem solid;
+}
+
+.btn-color-1:hover, .btn-color-2:hover {
+    cursor: pointer;
+}
+
+.btn-color-1, .btn-color-2:hover {
+    background-color: rgb(53,53,53);
+    color: white;
+}
+
+.btn-color-1:hover {
+    background-color: rgn(0,0,0);
+}
+
+.btn-color-2 {
+    background-color: none;
+}
+
+.btn-color-2:hover{
+    border: rgb(255,255,255) 0.1rem solid;
+}
+
+.btn-container {
+    gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+#about {
+    position: relative;
+}
+
+.about-containers  {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+    display: flex;
+}
+
+.about-pic {
+    max-width: 100%; /* Ustaw maksymalną szerokość obrazka na 100% */
+    height: auto; /* Auto dostosowanie wysokości do szerokości */
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2,5rem;
+}
+
+.details-container {
+    padding: 1,5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
+}
+
+.section-container {
+    gap : 4rem;
+    height: 80%;
+}
+.section_pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
 }
